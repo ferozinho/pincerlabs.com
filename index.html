@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cora by PincerLabs - AI WhatsApp Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13c8ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -10px rgba(19, 200, 236, 0.15);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(19, 200, 236, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 w-full px-6 py-4 lg:px-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<nav class="mx-auto flex max-w-7xl items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
+<span class="material-symbols-outlined text-2xl">water_drop</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">PincerLabs</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors dark:text-slate-300" href="#">Features</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors dark:text-slate-300" href="#">About</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors dark:text-slate-300" href="#">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex h-11 items-center justify-center rounded-2xl bg-primary px-6 text-sm font-bold text-slate-900 hover:opacity-90 transition-all soft-shadow">
+                        Get Early Access
+                    </button>
+<button class="md:hidden p-2 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="mx-auto max-w-7xl px-6 py-16 lg:px-20 lg:py-24">
+<div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+<div class="flex flex-col gap-8">
+<div class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                            Introducing Cora AI
+                        </div>
+<h1 class="text-5xl font-extrabold leading-[1.1] tracking-tight text-slate-900 dark:text-white lg:text-7xl">
+                            Automate Your WhatsApp. <span class="text-primary">Never Miss</span> a Customer.
+                        </h1>
+<p class="max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+                            Meet Cora, your AI WhatsApp assistant by PincerLabs that handles inquiries, captures leads, and grows your business while you sleep.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex h-14 items-center justify-center rounded-2xl bg-primary px-10 text-base font-bold text-slate-900 hover:scale-[1.02] transition-transform soft-shadow">
+                                Get Early Access
+                            </button>
+<button class="flex h-14 items-center justify-center rounded-2xl border-2 border-primary/20 bg-white/50 dark:bg-white/5 px-10 text-base font-bold text-slate-900 dark:text-white hover:bg-primary/5 transition-colors">
+                                View Demo
+                            </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 rounded-3xl bg-primary/10 blur-3xl"></div>
+<div class="relative rounded-3xl border border-primary/20 bg-white dark:bg-slate-800 p-4 soft-shadow">
+<img alt="Dashboard Preview" class="rounded-2xl w-full object-cover aspect-[4/3]" data-alt="Modern SaaS dashboard UI with soft-edged chat bubbles and coral AI icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDpgILEz5IK7rKhbYGGI_4R8UiOgfxZFCZ3z-1LC4ogoWrbwSM9khAS5WVYca51Ouu5oKEIHVdEOXVhvtaf0jNRSJW6T3fP7Adu5oEFGY7i-CrOSxplAYsriiN8eNA35xGXjeuY8g4IRQR1txB_GFCcjVFJFHYTtT_6gEUkOEy4edUIhvxsAKBjn27ui--hnwTy3cheWRyKePLvs1oLVs0WWyDebrB4s8QZAc1khKtN_lmURegKi9nuRwEZ1Vk0M8j-jHy3y70fGSm"/>
+<!-- Overlay floating UI element -->
+<div class="absolute -bottom-6 -left-6 hidden sm:block w-64 rounded-2xl bg-white dark:bg-slate-900 p-4 soft-shadow border border-primary/10">
+<div class="flex items-center gap-3 mb-3">
+<div class="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">robot_2</span>
+</div>
+<div class="text-xs font-bold">Cora AI Assistant</div>
+</div>
+<div class="space-y-2">
+<div class="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800"></div>
+<div class="h-2 w-3/4 rounded-full bg-slate-100 dark:bg-slate-800"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="bg-primary/5 py-24 lg:py-32">
+<div class="mx-auto max-w-7xl px-6 lg:px-20">
+<div class="mb-16 text-center">
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-white lg:text-4xl">Powerful Features for Seamless Automation</h2>
+<p class="mt-4 text-slate-600 dark:text-slate-400">Everything you need to scale your customer communications.</p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<!-- AI Auto-Reply -->
+<div class="flex flex-col gap-4 rounded-3xl bg-white dark:bg-slate-900 p-8 soft-shadow border border-transparent hover:border-primary/20 transition-all">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">AI Auto-Reply</h3>
+<p class="text-slate-600 dark:text-slate-400">Instant, intelligent responses to customer queries 24/7 with human-like understanding.</p>
+</div>
+<!-- Unified Inbox -->
+<div class="flex flex-col gap-4 rounded-3xl bg-white dark:bg-slate-900 p-8 soft-shadow border border-transparent hover:border-primary/20 transition-all">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">all_inbox</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Unified Inbox</h3>
+<p class="text-slate-600 dark:text-slate-400">Manage all your WhatsApp conversations in one clean, streamlined interface for your team.</p>
+</div>
+<!-- Lead Capture -->
+<div class="flex flex-col gap-4 rounded-3xl bg-white dark:bg-slate-900 p-8 soft-shadow border border-transparent hover:border-primary/20 transition-all">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">person_add</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Lead Capture</h3>
+<p class="text-slate-600 dark:text-slate-400">Automatically identify and save potential customer information directly into your CRM.</p>
+</div>
+<!-- Trainer -->
+<div class="flex flex-col gap-4 rounded-3xl bg-white dark:bg-slate-900 p-8 soft-shadow border border-transparent hover:border-primary/20 transition-all">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Trainer</h3>
+<p class="text-slate-600 dark:text-slate-400">Train Cora on your specific business knowledge, documents, and FAQs for precise answers.</p>
+</div>
+<!-- Smart Suggestions -->
+<div class="flex flex-col gap-4 rounded-3xl bg-white dark:bg-slate-900 p-8 soft-shadow border border-transparent hover:border-primary/20 transition-all lg:col-span-2">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Smart Suggestions</h3>
+<p class="text-slate-600 dark:text-slate-400">Get AI-powered recommendations for manual follow-ups and personalized engagement tactics to boost conversion.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary CTA Section -->
+<section class="mx-auto max-w-7xl px-6 py-20 lg:px-20">
+<div class="rounded-3xl bg-primary/10 p-12 lg:p-20 text-center relative overflow-hidden">
+<div class="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-primary/20 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">Start saving hours every day</h2>
+<p class="mx-auto max-w-xl text-lg text-slate-600 dark:text-slate-400 mb-10">
+                            Join the waitlist today and be among the first to experience the future of WhatsApp business automation.
+                        </p>
+<button class="h-16 rounded-2xl bg-primary px-12 text-lg font-bold text-slate-900 hover:scale-105 transition-transform soft-shadow">
+                            Join the Waitlist
+                        </button>
+</div>
+</div>
+</section>
+<!-- Nebby Teaser Section -->
+<section class="bg-background-dark py-24 text-white overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+<div class="mx-auto max-w-7xl px-6 lg:px-20 relative z-10 flex flex-col items-center">
+<div class="relative mb-12 flex h-48 w-48 items-center justify-center">
+<div class="absolute h-full w-full rounded-full bg-primary/20 blur-2xl"></div>
+<div class="relative h-32 w-32 rounded-full border-2 border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary animate-pulse">blur_on</span>
+</div>
+</div>
+<h2 class="text-4xl font-extrabold mb-4">Something New is Coming...</h2>
+<p class="text-slate-400 text-lg mb-10 max-w-lg text-center">
+                        Nebby is on the horizon. A revolutionary new way to interact with your business data. Stay tuned for the reveal.
+                    </p>
+<button class="h-14 rounded-2xl border-2 border-primary px-10 font-bold text-primary hover:bg-primary hover:text-slate-900 transition-all">
+                        Stay Updated
+                    </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-background-dark py-12 px-6 lg:px-20">
+<div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl">water_drop</span>
+</div>
+<span class="text-lg font-bold text-slate-900 dark:text-white">PincerLabs</span>
+</div>
+<div class="flex gap-8">
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Status</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+<div class="text-sm text-slate-400">
+                    © 2024 PincerLabs. All rights reserved.
+                </div>
+</div>
+</footer>
+</div>
+</body></html>
